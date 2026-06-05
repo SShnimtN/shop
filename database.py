@@ -32,7 +32,11 @@ def init_db():
             )
             ''')
 
+    c.execute('DELETE FROM cart')
     c.execute('DELETE FROM products')
+
+    c.execute('DELETE FROM sqlite_sequence WHERE name="cart"')
+    c.execute('DELETE FROM sqlite_sequence WHERE name="products"')
 
     products = [
         ('Синтезатор Yamaha PSR-EW310', 20000, '1.jpg'),
@@ -46,7 +50,7 @@ def init_db():
 
     conn.commit()
     conn.close()
-    print("БД успешно создана и обновлена!")
+    print("бд успешно создана и обновлена")
 
 if __name__ == '__main__':
     init_db()

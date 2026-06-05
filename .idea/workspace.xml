@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="784ce828-bdaf-45df-9d7e-1ff577eb4afd" name="Changes" comment="images added and shop.db initialized">
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+    <list default="true" id="784ce828-bdaf-45df-9d7e-1ff577eb4afd" name="Changes" comment="probably finished prototype (maybe not)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop.db" beforeDir="false" afterPath="$PROJECT_DIR$/shop.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780696901312</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="probably finished prototype (maybe not)">
+      <option name="closed" value="true" />
+      <created>1780702382434</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1780702382434</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -123,6 +125,7 @@
     <MESSAGE value="wow what iss thaatttt" />
     <MESSAGE value="just checking if it works fine" />
     <MESSAGE value="images added and shop.db initialized" />
-    <option name="LAST_COMMIT_MESSAGE" value="images added and shop.db initialized" />
+    <MESSAGE value="probably finished prototype (maybe not)" />
+    <option name="LAST_COMMIT_MESSAGE" value="probably finished prototype (maybe not)" />
   </component>
 </project>
