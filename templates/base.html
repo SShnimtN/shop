@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.6/dist/brite/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="/">🎵 MusicShop</a>
+            <div class="navbar-nav ms-auto align-items-center">
+                <a class="nav-link active me-3" href="/">Главная</a>
+
+                {% if session.username %}
+                    <span class="navbar-text text-white me-3">Привет, <strong class="text-danger">{{ session.username }}</strong>!</span>
+                    <a class="btn btn-outline-light btn-sm me-3" href="/logout">Выйти</a>
+                {% else %}
+                    <a class="btn btn-outline-light btn-sm me-2" href="/login">Войти</a>
+                    <a class="btn btn-warning btn-sm me-3" href="/register">Регистрация</a>
+                {% endif %}
+
+                <a class="nav-link text-white" href="/cart">Корзина <span class="badge bg-secondary">{{ cart_count }}</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container flex-grow-1">
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{ category }} text-center" role="alert">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
+        {% block content %}
+        {% endblock %}
+
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0 text-muted">&copy; 2026 Учебный проект интернет-магазина.</p>
+    </footer>
+
+</body>
+</html>

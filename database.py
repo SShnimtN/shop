@@ -13,6 +13,25 @@ def init_db():
             )
             ''')
 
+    c.execute('''
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                username TEXT UNIQUE NOT NULL,
+                password TEXT NOT NULL
+            )
+            ''')
+
+    c.execute('''
+            CREATE TABLE IF NOT EXISTS cart (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                product_id INTEGER NOT NULL,
+                quantity INTEGER DEFAULT 1,
+                FOREIGN KEY (user_id) REFERENCES users (id),
+                FOREIGN KEY (product_id) REFERENCES products (id)
+            )
+            ''')
+
     c.execute('DELETE FROM products')
 
     products = [
@@ -27,7 +46,7 @@ def init_db():
 
     conn.commit()
     conn.close()
-    print("бд успешно создана")
+    print("БД успешно создана и обновлена!")
 
 if __name__ == '__main__':
     init_db()
