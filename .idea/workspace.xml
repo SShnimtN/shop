@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="784ce828-bdaf-45df-9d7e-1ff577eb4afd" name="Changes" comment="probably finished prototype (maybe not)">
+    <list default="true" id="784ce828-bdaf-45df-9d7e-1ff577eb4afd" name="Changes" comment="product ids now start from 1 when running database.py if shop.db already exists">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop.db" beforeDir="false" afterPath="$PROJECT_DIR$/shop.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780702382434</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="product ids now start from 1 when running database.py if shop.db already exists">
+      <option name="closed" value="true" />
+      <created>1780703640553</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1780703640553</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -126,6 +134,7 @@
     <MESSAGE value="just checking if it works fine" />
     <MESSAGE value="images added and shop.db initialized" />
     <MESSAGE value="probably finished prototype (maybe not)" />
-    <option name="LAST_COMMIT_MESSAGE" value="probably finished prototype (maybe not)" />
+    <MESSAGE value="product ids now start from 1 when running database.py if shop.db already exists" />
+    <option name="LAST_COMMIT_MESSAGE" value="product ids now start from 1 when running database.py if shop.db already exists" />
   </component>
 </project>
