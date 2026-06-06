@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from werkzeug.security import generate_password_hash, check_password_hash
 import sqlite3
+import os
+import database
 
 app = Flask(__name__)
 app.secret_key = '123'
@@ -135,4 +137,8 @@ def remove_from_cart(cart_id):
 
 
 if __name__ == '__main__':
+    if not os.path.exists('shop.db'):
+        print("База данных не найдена. Создаю...")
+        database.init_db()
+
     app.run(debug=True)
